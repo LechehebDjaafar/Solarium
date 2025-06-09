@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solarium - خدمات تنظيف الألواح الشمسية</title>
+    <title>Solarium - مستقبل تنظيف الألواح الشمسية</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header المحدث -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
-        <div class="logo">
-            <img src="images\logo.jpg" alt="Solarium Logo" class="logo-img">
-        </div>
-
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Solarium Logo" class="logo-img">
+                    <span class="logo-text">Solarium</span>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">الرئيسية</a></li>
                     <li><a href="#about" class="nav-link">المشروع</a></li>
                     <li><a href="#technology" class="nav-link">التقنية</a></li>
+                    <li><a href="#gallery" class="nav-link">معرض الصور</a></li>
                     <li><a href="#team" class="nav-link">الفريق</a></li>
                     <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
                 </ul>
@@ -33,406 +35,676 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section المحدث -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
         <div class="hero-container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <h1 class="hero-title">
                     <span class="gradient-text">Solarium</span>
-                    <br>مستقبل تنظيف الألواح الشمسية
+                    <span class="hero-subtitle">مستقبل تنظيف الألواح الشمسية</span>
                 </h1>
                 <p class="hero-description">
                     نقدم حلولاً مبتكرة لتنظيف الألواح الشمسية بتقنيتين متطورتين: التنظيف الجاف والتنظيف بالماء، 
-                    لضمان أقصى كفاءة لأنظمة الطاقة الشمسية
+                    لضمان أقصى كفاءة لأنظمة الطاقة الشمسية مع الحفاظ على البيئة
                 </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">كفاءة التنظيف</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">تقنية متطورة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">صديق للبيئة</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToSection('about')">
-                        <i class="fas fa-rocket"></i>
-                        اكتشف المشروع
+                    <button class="btn btn-primary" onclick="scrollToSection('gallery')">
+                        <i class="fas fa-images"></i>
+                        استكشف المعرض
                     </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
-                        <i class="fas fa-envelope"></i>
-                        تواصل معنا
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-info-circle"></i>
+                        تعرف على المشروع
                     </button>
                 </div>
             </div>
-            <div class="hero-animation">
-                <div class="solar-panel">
-                    <div class="panel-grid">
-                        <div class="panel-cell"></div>
-                        <div class="panel-cell"></div>
-                        <div class="panel-cell"></div>
-                        <div class="panel-cell"></div>
-                        <div class="panel-cell"></div>
-                        <div class="panel-cell"></div>
+            <div class="hero-animation" data-aos="fade-left">
+                <div class="solar-system">
+                    <div class="solar-panel-3d">
+                        <div class="panel-surface">
+                            <div class="panel-grid">
+                                <div class="panel-cell"></div>
+                                <div class="panel-cell"></div>
+                                <div class="panel-cell"></div>
+                                <div class="panel-cell"></div>
+                                <div class="panel-cell"></div>
+                                <div class="panel-cell"></div>
+                            </div>
+                        </div>
+                        <div class="cleaning-robot">
+                            <div class="robot-body"></div>
+                            <div class="robot-arm"></div>
+                        </div>
                     </div>
-                    <div class="cleaning-arm"></div>
                 </div>
             </div>
         </div>
-        <div class="hero-particles"></div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section المحدث -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">مشروع التخرج المبتكر</h2>
-                <p class="section-subtitle">رحلة من الفكرة إلى النموذج الأولي</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">مشروع التخرج</span>
+                <h2 class="section-title">رحلة الابتكار والإبداع</h2>
+                <p class="section-subtitle">من الفكرة إلى النموذج الأولي الفعال</p>
             </div>
             
             <div class="about-content">
-                <div class="about-text">
-                    <h3>قصة المشروع</h3>
-                    <p>
-                        بدأت فكرة Solarium من ملاحظة بسيطة: الألواح الشمسية تفقد كفاءتها بسبب تراكم الغبار والأتربة. 
-                        قررنا أنا وفريقي تطوير حل مبتكر لهذه المشكلة من خلال إنشاء آلة تنظيف ذكية.
-                    </p>
+                <div class="about-text" data-aos="fade-right">
+                    <div class="story-card">
+                        <div class="story-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>قصة المشروع</h3>
+                        <p>
+                            بدأت فكرة Solarium من ملاحظة بسيطة لكنها مهمة: الألواح الشمسية تفقد كفاءتها بشكل كبير 
+                            بسبب تراكم الغبار والأتربة. هذه المشكلة تؤثر على إنتاجية الطاقة المتجددة وتقلل من فعالية 
+                            الاستثمار في الطاقة الشمسية.
+                        </p>
+                        <p>
+                            قررنا كفريق من الطلاب المبدعين تطوير حل مبتكر وعملي لهذه المشكلة من خلال إنشاء 
+                            آلة تنظيف ذكية تجمع بين التقنيات الحديثة والكفاءة العالية.
+                        </p>
+                    </div>
                     
-                    <div class="stats-grid">
-                        <div class="stat-item">
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-cog"></i>
+                            <h4>تقنية متطورة</h4>
+                            <p>نظام تنظيف ذكي بتقنيتين مختلفتين</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <h4>صديق للبيئة</h4>
+                            <p>حلول مستدامة تحافظ على البيئة</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>كفاءة عالية</h4>
+                            <p>تحسين إنتاجية الألواح الشمسية</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tools"></i>
+                            <h4>سهولة الصيانة</h4>
+                            <p>تصميم بسيط وقابل للصيانة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">أعضاء الفريق</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
                             <div class="stat-number">2</div>
                             <div class="stat-label">تقنيات تنظيف</div>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
                             <div class="stat-number">1</div>
                             <div class="stat-label">نموذج أولي</div>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
                             <div class="stat-number">100%</div>
                             <div class="stat-label">جهد ذاتي</div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-solar-panel"></i>
-                        <p>صورة النموذج الأولي</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Section -->
+    <!-- Technology Section المحدث -->
     <section id="technology" class="technology">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">التقنيات المستخدمة</h2>
-                <p class="section-subtitle">حلول مبتكرة لتنظيف فعال</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">التقنيات</span>
+                <h2 class="section-title">حلول تقنية مبتكرة</h2>
+                <p class="section-subtitle">تقنيات متطورة لتنظيف فعال ومستدام</p>
             </div>
             
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <div class="tech-icon">
-                        <i class="fas fa-wind"></i>
+            <div class="tech-showcase">
+                <div class="tech-card modern" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-header">
+                        <div class="tech-icon dry">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3>التنظيف الجاف</h3>
+                        <span class="tech-badge">تقنية متقدمة</span>
                     </div>
-                    <h3>التنظيف الجاف</h3>
-                    <p>
-                        تقنية متطورة تعتمد على المسح الجاف لإزالة الغبار والأتربة دون استخدام الماء، 
-                        مثالية للمناطق الصحراوية والبيئات قليلة المياه.
-                    </p>
-                    <ul class="tech-features">
-                        <li>توفير في استهلاك المياه</li>
-                        <li>مناسب للبيئات الجافة</li>
-                        <li>تنظيف سريع وفعال</li>
-                    </ul>
+                    <div class="tech-content">
+                        <p>
+                            تقنية متطورة تعتمد على المسح الجاف الذكي لإزالة الغبار والأتربة دون استخدام الماء، 
+                            مثالية للمناطق الصحراوية والبيئات قليلة المياه.
+                        </p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> توفير كامل في استهلاك المياه</li>
+                            <li><i class="fas fa-check"></i> مناسب للبيئات الجافة والقاسية</li>
+                            <li><i class="fas fa-check"></i> تنظيف سريع وفعال</li>
+                            <li><i class="fas fa-check"></i> صيانة أقل ومتانة عالية</li>
+                        </ul>
+                    </div>
+                    <div class="tech-animation">
+                        <div class="dry-cleaning-demo"></div>
+                    </div>
                 </div>
                 
-                <div class="tech-card">
-                    <div class="tech-icon">
-                        <i class="fas fa-tint"></i>
+                <div class="tech-card modern" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-header">
+                        <div class="tech-icon wet">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>التنظيف بالماء</h3>
+                        <span class="tech-badge">تنظيف عميق</span>
                     </div>
-                    <h3>التنظيف بالماء</h3>
-                    <p>
-                        نظام متكامل يقوم برش الماء بطريقة محسوبة ثم المسح للحصول على تنظيف عميق 
-                        وإزالة الأوساخ العنيدة والبقع الصعبة.
-                    </p>
-                    <ul class="tech-features">
-                        <li>تنظيف عميق ومتقن</li>
-                        <li>إزالة البقع الصعبة</li>
-                        <li>نظام رش ذكي</li>
-                    </ul>
+                    <div class="tech-content">
+                        <p>
+                            نظام متكامل يقوم برش الماء بطريقة محسوبة ومدروسة ثم المسح للحصول على تنظيف عميق 
+                            وإزالة الأوساخ العنيدة والبقع الصعبة بكفاءة عالية.
+                        </p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> تنظيف عميق ومتقن للغاية</li>
+                            <li><i class="fas fa-check"></i> إزالة البقع والأوساخ العنيدة</li>
+                            <li><i class="fas fa-check"></i> نظام رش ذكي ومحسوب</li>
+                            <li><i class="fas fa-check"></i> استهلاك مياه مُحسَّن</li>
+                        </ul>
+                    </div>
+                    <div class="tech-animation">
+                        <div class="wet-cleaning-demo"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Gallery Section -->
-<!--  
-<section id="gallery" class="gallery">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">معرض النموذج الأولي</h2>
-            <p class="section-subtitle">استكشف رحلة تطوير مشروع Solarium</p>
-        </div>
+    <!-- Gallery Section الجديد -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">معرض الصور</span>
+                <h2 class="section-title">رحلة تطوير النموذج الأولي</h2>
+                <p class="section-subtitle">استكشف مراحل تطوير وتنفيذ مشروع Solarium</p>
+            </div>
 
-        <div class="simple-gallery">
-            
-            <div class="gallery-item" data-type="image" data-src="images/img1.jpg" data-title="المرحلة الأولى" data-desc="بداية تجميع المكونات الأساسية">
-                <img src="images/img1.jpg" alt="النموذج الأولي - المرحلة الأولى">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>المرحلة الأولى</h4>
-                    <p>بداية تجميع المكونات</p>
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="image" data-src="images/img3.jpg" data-title="النظام الميكانيكي" data-desc="تطوير آلية الحركة والتنظيف">
-                <img src="images/img3.jpg" alt="تطوير النظام الميكانيكي">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>النظام الميكانيكي</h4>
-                    <p>آلية الحركة والتنظيف</p>
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="video" data-src="videos/img2.mp4" data-title="اختبار النموذج الأولي" data-desc="عرض توضيحي لآلية العمل">
-                <video poster="images/video-thumb1.jpg">
-                    <source src="videos/img2.mp4" type="video/mp4">
-                </video>
-                <div class="item-overlay">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="item-info">
-                    <h4>اختبار النموذج</h4>
-                    <p>عرض توضيحي للعمل</p>
-                </div>
-                <div class="video-badge">
-                    <i class="fas fa-video"></i>
-                    2:30
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="image" data-src="images/img4.jpg" data-title="التنظيف الجاف" data-desc="اختبار تقنية التنظيف بدون ماء">
-                <img src="images/img4.jpg" alt="اختبار التنظيف الجاف">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>التنظيف الجاف</h4>
-                    <p>تقنية بدون ماء</p>
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="image" data-src="images/img5.jpg" data-title="التنظيف بالماء" data-desc="نظام الرش والتنظيف المتطور">
-                <img src="images/img5.jpg" alt="التنظيف بالماء">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>التنظيف بالماء</h4>
-                    <p>نظام الرش المتطور</p>
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="video" data-src="videos/vid1.mp4" data-title="العرض النهائي" data-desc="النموذج الأولي في العمل">
-                <video poster="images/video-thumb2.jpg">
-                    <source src="videos/vid1.mp4" type="video/mp4">
-                </video>
-                <div class="item-overlay">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="item-info">
-                    <h4>العرض النهائي</h4>
-                    <p>النموذج في العمل</p>
-                </div>
-                <div class="video-badge">
-                    <i class="fas fa-video"></i>
-                    1:45
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="image" data-src="images/img6.jpg" data-title="التفاصيل التقنية" data-desc="المكونات الداخلية للنظام">
-                <img src="images/img6.jpg" alt="التفاصيل التقنية">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>التفاصيل التقنية</h4>
-                    <p>المكونات الداخلية</p>
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="image" data-src="images/img7.jpg" data-title="النتائج" data-desc="فعالية التنظيف والأداء">
-                <img src="images/img7.jpg" alt="النتائج">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>النتائج</h4>
-                    <p>فعالية التنظيف</p>
-                </div>
-            </div>
-            
-            <div class="gallery-item" data-type="image" data-src="images/img8.jpg" data-title="المشروع النهائي" data-desc="النموذج الأولي المكتمل">
-                <img src="images/img8.jpg" alt="المشروع النهائي">
-                <div class="item-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                <div class="item-info">
-                    <h4>المشروع النهائي</h4>
-                    <p>النموذج المكتمل</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="popup-modal" class="popup-modal">
-        <div class="popup-backdrop"></div>
-        <div class="popup-container">
-            <div class="popup-header">
-                <h3 id="popup-title">عنوان الصورة</h3>
-                <button class="popup-close" id="popup-close">
-                    <i class="fas fa-times"></i>
+            <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> جميع الصور
+                </button>
+                <button class="filter-btn" data-filter="development">
+                    <i class="fas fa-cogs"></i> التطوير
+                </button>
+                <button class="filter-btn" data-filter="testing">
+                    <i class="fas fa-flask"></i> الاختبار
+                </button>
+                <button class="filter-btn" data-filter="final">
+                    <i class="fas fa-trophy"></i> النتائج النهائية
                 </button>
             </div>
-            <div class="popup-content">
-                <div class="popup-media" id="popup-media">
-                   
+
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item" data-category="development" data-aos="zoom-in">
+                    <div class="gallery-image">
+                        <img src="images/img1.jpg" alt="بداية التطوير" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>المرحلة الأولى</h4>
+                                <p>بداية تجميع المكونات الأساسية</p>
+                                <button class="gallery-btn" onclick="openLightbox('images/img1.jpg', 'المرحلة الأولى', 'بداية تجميع المكونات الأساسية للنموذج الأولي')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="popup-footer">
-                <p id="popup-description">وصف الصورة</p>
-                <div class="popup-nav">
-                    <button class="nav-btn" id="popup-prev">
-                        <i class="fas fa-chevron-left"></i>
-                        السابق
-                    </button>
-                    <span class="popup-counter">
-                        <span id="current-num">1</span> / <span id="total-num">9</span>
-                    </span>
-                    <button class="nav-btn" id="popup-next">
-                        التالي
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+
+                <div class="gallery-item" data-category="development" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-image">
+                        <img src="images/img3.jpg" alt="النظام الميكانيكي" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>النظام الميكانيكي</h4>
+                                <p>تطوير آلية الحركة والتنظيف</p>
+                                <button class="gallery-btn" onclick="openLightbox('images/img3.jpg', 'النظام الميكانيكي', 'تطوير وتجميع آلية الحركة والتنظيف المتطورة')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="testing" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-image">
+                        <img src="images/dry-cleaning-test.jpg" alt="اختبار التنظيف الجاف" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>اختبار التنظيف الجاف</h4>
+                                <p>تجربة تقنية التنظيف بدون ماء</p>
+                                <button class="gallery-btn" onclick="openLightbox('images/dry-cleaning-test.jpg', 'اختبار التنظيف الجاف', 'اختبار فعالية تقنية التنظيف الجاف على الألواح الشمسية')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="testing" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-image">
+                        <img src="images/img4.jpg" alt="اختبار التنظيف بالماء" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>اختبار التنظيف بالماء</h4>
+                                <p>تجربة نظام الرش والتنظيف المتطور</p>
+                                <button class="gallery-btn" onclick="openLightbox('images/img4.jpg', 'اختبار التنظيف بالماء', 'اختبار نظام الرش والتنظيف بالماء المحسوب')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="final" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-image">
+                        <img src="images/img5.jpg" alt="النموذج النهائي" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>النموذج النهائي</h4>
+                                <p>النموذج الأولي المكتمل والجاهز</p>
+                                <button class="gallery-btn" onclick="openLightbox('images/img5.jpg', 'النموذج النهائي', 'النموذج الأولي المكتمل بجميع ميزاته وتقنياته')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="final" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-image">
+                        <img src="images/img6.jpg" alt="النتائج والأداء" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>النتائج والأداء</h4>
+                                <p>فعالية التنظيف والأداء المحقق</p>
+                                <button class="gallery-btn" onclick="openLightbox('images/img6.jpg', 'النتائج والأداء', 'نتائج الاختبارات وقياس فعالية التنظيف')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section> -->
 
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">فريق العمل</h2>
-                <p class="section-subtitle">العقول المبدعة وراء المشروع</p>
-            </div>
-            
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>أمين عرعار</h3>
-                    <p class="team-role">مؤسس ومطور المشروع</p>
-                    <p class="team-description">
-                        طالب هندسة شغوف بالطاقة المتجددة والتكنولوجيا المستدامة، 
-                        قاد فريق العمل لتحويل الفكرة إلى واقع ملموس.
-                    </p>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close">&times;</span>
+                <img id="lightbox-image" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-description"></p>
                 </div>
-                
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>فريق العمل</h3>
-                    <p class="team-role">شركاء النجاح</p>
-                    <p class="team-description">
-                        مجموعة من الطلاب المبدعين الذين ساهموا في تطوير وتنفيذ المشروع 
-                        بجهود ذاتية وإصرار على النجاح.
-                    </p>
+                <div class="lightbox-nav">
+                    <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Team Section المحدث -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">فريق العمل</span>
+                <h2 class="section-title">العقول المبدعة وراء المشروع</h2>
+                <p class="section-subtitle">تعرف على الفريق الذي حول الحلم إلى واقع</p>
+            </div>
+            
+            <!-- Project Leader -->
+            <div class="team-leader" data-aos="fade-up" data-aos-delay="100">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/team/amine.jpg" alt="رئيس المشروع" loading="lazy">
+                        <div class="leader-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>أمين عرعار</h3>
+                        <p class="leader-title">رئيس المشروع ومؤسس الفكرة</p>
+                        <p class="leader-description">
+                            مهندس شغوف بالطاقة المتجددة والتكنولوجيا المستدامة، قاد الفريق بحماس وإصرار 
+                            لتحويل الفكرة المبتكرة إلى نموذج أولي فعال وقابل للتطبيق.
+                        </p>
+                        <div class="leader-skills">
+                            <span class="skill-tag">قيادة الفريق</span>
+                            <span class="skill-tag">الطاقة المتجددة</span>
+                            <span class="skill-tag">الابتكار التقني</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Members -->
+            <div class="team-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-member" data-aos="flip-left" data-aos-delay="100">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="images/team/zkria.jpg" alt="عضو الفريق 1" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>مصباح زكرياء</h4>
+                            <p class="member-role">مهندس ميكانيكي</p>
+                            <p class="member-description">
+                                متخصص في تصميم الأنظمة الميكانيكية وآليات الحركة، 
+                                ساهم في تطوير النظام الميكانيكي للآلة.
+                            </p>
+                            <div class="member-skills">
+                                <span>التصميم الميكانيكي</span>
+                                <span>CAD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="flip-left" data-aos-delay="200">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="images/team/alaa.jpg" alt="عضو الفريق 2" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>قواسمية علاء الدين
+                            </h4>
+                            <p class="member-role">مهندس كهربائي</p>
+                            <p class="member-description">
+                                خبيرة في الأنظمة الكهربائية والتحكم الآلي، 
+                                طورت نظام التحكم والاستشعار للآلة.
+                            </p>
+                            <div class="member-skills">
+                                <span>الأنظمة الكهربائية</span>
+                                <span>التحكم الآلي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="flip-left" data-aos-delay="300">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="images/team/trfawi.jpg" alt="عضو الفريق 3" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>ايمن طرفاوي</h4>
+                            <p class="member-role">مطور برمجيات</p>
+                            <p class="member-description">
+                                متخصص في البرمجة وتطوير التطبيقات، 
+                                طور واجهة التحكم والنظام البرمجي للآلة.
+                            </p>
+                            <div class="member-skills">
+                                <span>البرمجة</span>
+                                <span>واجهات المستخدم</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="flip-left" data-aos-delay="400">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="images/team/redone.jpg" alt="عضو الفريق 4" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>هواري رضوان</h4>
+                            <p class="member-role">باحث في الطاقة المتجددة</p>
+                            <p class="member-description">
+                                متخصص في أبحاث الطاقة المتجددة والاستدامة، 
+                                ساهم في الدراسات والتحليلات البيئية.
+                            </p>
+                            <div class="member-skills">
+                                <span>البحث العلمي</span>
+                                <span>الاستدامة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section المحدث -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">تواصل معنا</h2>
-                <p class="section-subtitle">نحن متحمسون للحديث عن مشروعنا</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">تواصل معنا</span>
+                <h2 class="section-title">نحن متحمسون للحديث عن مشروعنا</h2>
+                <p class="section-subtitle">تواصل معنا لمعرفة المزيد أو للتعاون في مشاريع مستقبلية</p>
             </div>
             
             <div class="contact-content">
-                <div class="contact-info">
-                    <h3>معلومات التواصل</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>info@solarium-cleaning.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+213 XX XXX XXXX</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>الحزائر - ورقلة</span>
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <h3>معلومات التواصل</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">البريد الإلكتروني</span>
+                                    <span class="contact-value">info@solarium-cleaning.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">رقم الهاتف</span>
+                                    <span class="contact-value">+213 XX XXX XXXX</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">الموقع</span>
+                                    <span class="contact-value">ورقلة، الجزائر</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <h4>تابعنا على</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="الاسم الكامل" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="البريد الإلكتروني" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="الموضوع" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="الرسالة" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        إرسال الرسالة
-                    </button>
-                </form>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="form-header">
+                            <h3>أرسل لنا رسالة</h3>
+                            <p>سنرد عليك في أقرب وقت ممكن</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">الاسم الأول</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">اسم العائلة</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="project">استفسار عن المشروع</option>
+                                <option value="collaboration">فرص التعاون</option>
+                                <option value="technical">استفسار تقني</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer المحدث -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images\logo.jpg" alt="Solarium Logo">
-                    <p>مستقبل تنظيف الألواح الشمسية</p>
-                </div>
-                <div class="footer-links">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#about">المشروع</a></li>
-                        <li><a href="#technology">التقنية</a></li>
-                        <li><a href="#team">الفريق</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>تابعنا</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="images/logo.jpg" alt="Solarium Logo">
+                            <span class="footer-logo-text">Solarium</span>
+                        </div>
+                        <p class="footer-description">
+                            مستقبل تنظيف الألواح الشمسية بتقنيات مبتكرة ومستدامة 
+                            لضمان أقصى كفاءة لأنظمة الطاقة المتجددة.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>روابط سريعة</h4>
+                            <ul>
+                                <li><a href="#home">الرئيسية</a></li>
+                                <li><a href="#about">المشروع</a></li>
+                                <li><a href="#technology">التقنية</a></li>
+                                <li><a href="#gallery">معرض الصور</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>الفريق</h4>
+                            <ul>
+                                <li><a href="#team">أعضاء الفريق</a></li>
+                                <li><a href="#contact">تواصل معنا</a></li>
+                                <li><a href="#">سياسة الخصوصية</a></li>
+                                <li><a href="#">شروط الاستخدام</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>معلومات الاتصال</h4>
+                            <div class="footer-contact">
+                                <p><i class="fas fa-envelope"></i> info@solarium-cleaning.com</p>
+                                <p><i class="fas fa-phone"></i> +213 XX XXX XXXX</p>
+                                <p><i class="fas fa-map-marker-alt"></i> ورقلة، الجزائر</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 Solarium Cleaning Services. جميع الحقوق محفوظة.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Solarium Cleaning Services. جميع الحقوق محفوظة.</p>
+                    <p>تم التطوير بـ <i class="fas fa-heart"></i> من قبل فريق Solarium</p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
